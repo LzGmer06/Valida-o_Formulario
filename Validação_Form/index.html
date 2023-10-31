@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stillo.css">
+    <link rel="icon" href="img/o-maior-erro-no-marketing-300x336-removebg-preview.png">
+    <title>Validando Forms</title>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <span>Formulários com JS</span>
+    </div>
+
+    <div class="erroEmail">
+        <span> Por favor, digite um email válido</span>
+        <div class="imgemail">
+            <img src="img/o-maior-erro-no-marketing-300x336-removebg-preview.png">
+        </div>
+    </div>
+
+    <div class="erroUsername">
+        <span>Digite um Username válido com 5 caracter e 1 underline</span>
+        <div class="imgusername">
+            <img src="img/o-maior-erro-no-marketing-300x336-removebg-preview.png">
+        </div>
+    </div>
+
+    <div class="erroNome">
+        <span>Digite nome e Sobrenome</span>
+        <div class="imagemnome">
+            <img src="img/o-maior-erro-no-marketing-300x336-removebg-preview.png">
+        </div>
+    </div>
+
+    <div class="erroSenha">
+        <span>A senha deve conter pelo menos 10 caracteres, entre letras maiúsculas, números e caracteres especias</span>
+        <div class="imgsenha">
+            <img src="img/o-maior-erro-no-marketing-300x336-removebg-preview.png">
+        </div>
+    </div>
+
+
+
+
+    <div class="form1">
+
+        <form action="pag2" method="POST">
+
+            <fieldset>
+
+                <legend>Cadastro</legend>
+
+                <div>
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="idnome" placeholder="Digite seu nome.." required="">
+                </div> 
+
+                <div>
+                <label for="nome">Username:</label>
+                <input type="text" id="idUsername" placeholder="Digite seu Username.." required="">
+                </div> 
+
+                <div>
+                <label for="email">Email:</label>
+                <input type="text" id="idemail" placeholder="email@email.com" required="">
+                </div>
+
+                <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="idsenha" placeholder="Crie uma senha de pelo menos 10 dígitos" maxlength="15" required="">
+                <input type="checkbox" onclick="MostrarOcultarSenha()" id="idsenha"> Mostrar Senha:
+               </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
+            </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>
